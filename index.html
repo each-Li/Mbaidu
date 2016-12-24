@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+    	var scale= 1;
+    		if(window.devicePixelRatio){
+    			scale= scale/window.devicePixelRatio;
+    		}
+    		document.write('<meta name="viewport"content="initial-scale='+scale+',minimum-scale='+scale+',maximum-scale='+scale+',user-scalable=no">');
+    </script>
+    <title>百度</title>
+    <script type="text/javascript">
+    	toSize()
+    	function toSize(){
+    		var html= document.getElementsByTagName("html") [0];
+    		var screenW= html.getBoundingClientRect().width;
+    		html.style.fontSize=screenW/16+"px";
+    		}
+    	window.addEventListener(
+    		"orientationchange",
+    		function(){
+    			toSize();
+    		},
+    		false
+    	);
+    	window.addEventListener(
+				"resize",
+				function(){
+					toSize ();
+				},
+				false
+			);
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<header id="header" class="clearFix">
+		<a href="#" class="weather"><img src="img/weather.png"/></a>
+		<a href="#" class="person"></a>
+		<a href="#" class="skin"></a>
+	</header>
+	<section class="wrap">
+		<h1 class="h1"><a href="#" class="logo"></a></h1>
+		<form action="http//www.baidu.com" class="form">			
+			<input type="search" class="search"/>
+		</form>
+		<nav class="nav clearFix">
+			<a href="#" class="new">新闻</a>
+			<a href="#" class="book">小说</a>
+			<a href="#" class="video">视频</a>
+			<a href="#" class="rice">糯米</a>
+			<a href="#" class="map">地图</a>
+			<a href="#" class="more">更多</a>
+		</nav>
+		<div class="subNav">
+			<h4><a href="#" class="h4Left">我的导航</a><a href="#" class="h4Right"></a></h4>
+			<nav class="clearFix">
+				<a href="#">资讯</a>
+				<a href="">hao123</a>
+				<a href="">图片</a>
+				<a href="">爱奇艺</a>
+				<a href="">美女</a>
+				<a href="">音乐</a>
+				<a href="">笑话</a>
+				<a href="#" class="add"></a>
+			</nav>
+		</div>
+		<div class="news">
+			<h4><a href="#" class="h4Left">实时热点</a><span class="h4Right"><a href="#" class="refresh"><span></span>换一批</a><sapn class="border">|</sapn><a href="#" class="point"></a></span></h4>
+			<ul class="newsList clearFix">
+				<li><strong><a href="#">940万考生赴高考</a><em></em></strong><span></span></li>
+				<li><strong><a href="#">陈冠希谈新歌…</a><em></em></strong><span></span></li>
+				<li><strong><a href="#">春娇救志明将开拍</a><em></em></strong><span></span></li>
+				<li><strong><a href="#">百度新品牌发声</a></strong><span></span></li>
+				<li><strong><a href="#">郑州公交爱心车厢</a></strong><span></span></li>
+				<li><strong><a href="#">90后跳伞庆生</a></strong><span></span></li>
+			</ul>
+			<p><a href="#">百度风云榜<strong>&gt;</strong></a></p>
+		</div>
+		<div class="push">
+			<h4><a href="#" class="h4Left">百度推荐</a><span class="h4Right"><a href="#" class="refresh"><span></span>换一批</a><sapn class="border">|</sapn><a href="#" class="point"></a></span></h4>
+			<dl class="pushList">
+				<dt><a href="#"><img src="img/imgnba.png" /><span>湖人榜眼自爆凌晨5点开练 中国之旅
+				天天训练</span></a><time>05:51</time></dt>
+				<dd><a href="#">探访海淀高考试卷领取 所有押卷车…</a><time>08:11</time></dd>
+				<dd><a href="#">詹皇独裁另骑士彻底瘫痪 人人抢F…</a><time>07:55</time></dd>
+				<dd><a href="#">国际油价6日上涨 纽油大涨逾2%</a><time>06:53</time></dd>
+			</dl>
+			<p><a href="#">查看更多推荐<strong>&gt;</strong></a></p>
+		</div>
+		<div class="life">
+			<h4><a href="#" class="h4Left">生活服务</a><a href="#" class="h4Right"></a></h4>
+			<p class="position">
+				<a href="#" class="clearFix">
+					<span class="positionL">点击定位，查看附近位置信息</span>
+					<span class="positionR">
+						<span class="positionIco"></span>
+						<span class="positionTxt">定位</span>
+					</span>
+				</a>
+			</p>
+			<ul class="lifeList clearFix">
+				<li><a href="#"><span class="ico"></span>电影</a></li>
+				<li><a href="#"><span class="ico2"></span>团购</a></li>
+				<li><a href="#"><span class="ico3"></span>外卖</a></li>
+				<li><a href="#"><span class="ico4"></span>打车</a></li>
+				<li><a href="#"><span class="ico5"></span>酒店</a></li>
+				<li><a href="#"><span class="ico6"></span>美食</a></li>
+				<li><a href="#"><span class="ico7"></span>KTV</a></li>
+				<li><a href="#"><span class="ico8"></span>充值</a></li>
+			</ul>
+			<p class="showAll"><a href="#">展示全部<span></span></a></p>
+		</div>
+		<div class="buy">
+			<h4><a href="#" class="h4Left">购物</a><span class="h4Right"><a href="#" class="refresh"><span></span>换一批</a><sapn class="border">|</sapn><a href="#" class="point"></a></span></h4>
+			<a href="#">
+				<img src="img/newman.png" class="newmanImg"/>
+			</a>
+			<ul class="buyList clearFix">
+				<li><a href="#">京东商城</a></li>
+				<li><a href="#">百度糯米</a></li>
+				<li><a href="#">1号店</a></li>
+				<li><a href="#">唯品会</a></li>
+				<li><a href="#">当当网</a></li>
+				<li><a href="#">蘑菇街</a></li>
+				<li><a href="#">淘宝特卖</a></li>
+				<li><a href="#">国美在线</a></li>
+			</ul>
+			<p><a href="#">查看更多<strong>&gt;</strong></a></p>
+		</div>
+		<div class="traffic">
+			<h4><a href="#" class="h4Left">交通路况</a><a href="#" class="h4Right"></a></h4>
+			<p class="home"><a href="#">设置家和公司地址</a></p>
+			<p><a href="#">随时随地，了解实时路况</a></p>
+		</div>
+		<div class="card">
+			<a href="#">管理我的卡片</a>
+		</div>
+	</section>
+	<footer class="end">
+		<p class="user"><a href="#"><span></span>用户反馈</a></p>
+		<p><a href="#">使用百度前必读 Baidu 京ICP证030173号</a></p>
+		<p class="last"><a href="#"><span></span>京公网安备11000002000001号</a></p>
+	</footer>
+</body>
+</html>
